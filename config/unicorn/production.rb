@@ -6,7 +6,7 @@ $timeout = 30
 $app_dir = "/var/www/achieve/current"
 #リクエストを受け取るポート番号を指定。後述
 #$listen  = File.expand_path 'tmp/sockets/unicorn.sock', $app_dir
-listen = '/var/www/achieve/current/tmp/sockets/unicorn.sock'
+listen = '/var/run/unicorn.sock'
 #PIDの管理ファイルディレクトリ
 $pid     = File.expand_path 'tmp/pids/unicorn.pid', $app_dir
 #エラーログを吐き出すファイルのディレクトリ
